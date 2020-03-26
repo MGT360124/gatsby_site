@@ -30,10 +30,11 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop --prefix-paths",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "remove": "sh ./remove.sh"
+    "remove": "sh ./remove.sh",
+    "deploy": "sh ./deploy.sh"
   },
   "repository": {
     "type": "git",
