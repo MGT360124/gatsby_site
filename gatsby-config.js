@@ -1,6 +1,8 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+const path = require('path')
+
 console.log('process.env', process.env.NODE_ENV)
 module.exports = {
   pathPrefix: `/site`,
@@ -20,8 +22,8 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@src": "src",
-          "@components":  "src/components"
+          '@src': path.resolve(__dirname, 'src'),
+          '@components': path.resolve(__dirname, 'src/components'),
         },
         extensions: ['tsx', 'ts', 'js', 'css']
       }
