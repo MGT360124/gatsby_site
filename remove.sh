@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Hello World !"
+echo "清除site文件"
 echo "当前目录"
 pwd
 
