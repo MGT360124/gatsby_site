@@ -7,6 +7,7 @@
 
 import React from "react"
 import { Header } from "../header"
+import {HeaderWrapper, Main} from './atoms'
 import "@src/style/global.css"
 
 
@@ -46,11 +47,12 @@ const headerList: HeaderListItem[] = [
 interface Props {
   children: React.ReactNode
 }
+const pcWidth = '1200px'
 const Layout = ({ children }: Props) => {
   return (
     <>
-      <Header headerList={headerList}/>
-      <main>{children}</main>
+      <HeaderWrapper><Header width={pcWidth} headerList={headerList}/></HeaderWrapper>
+      <Main width={pcWidth}>{children}</Main>
     </>
   )
 }

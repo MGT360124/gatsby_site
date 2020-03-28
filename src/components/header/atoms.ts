@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Transition, color} from '@src/theme'
 import { Link } from "gatsby"
-export const HeaderWrapper = styled.div`
+
+export const HeaderWrapper = styled.div<{width: string}>`
     display: flex;
-    max-width: 1200px;
+    max-width: ${props => props.width};
     margin: 0 auto;
     height: 70px;
 `
