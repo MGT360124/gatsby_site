@@ -25,6 +25,18 @@ const headerList: HeaderListItem[] = [
     component: null
   },
   {
+    name: 'html',
+    link: '/html',
+    icon: '',
+    component: null
+  },
+  {
+    name: 'css',
+    link: '/css',
+    icon: '',
+    component: null
+  },
+  {
     name: '关于',
     link: '/about',
     icon: '',

@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
+
 import React from "react"
-import {HeaderWrapper} from './atoms'
+import {HeaderWrapper, NavList, NavListItem, SearchWrapper} from './atoms'
 import {HeaderListItem} from '@components/layout/layout'
 
 interface Props {
@@ -9,7 +9,12 @@ interface Props {
 
 const Header = ({headerList}: Props) => (
   <HeaderWrapper>
-     <div></div>
+    <NavList>
+      {headerList.map(item => {
+          return <NavListItem to={item.link} key={item.name}>{item.name}</NavListItem>
+      })}
+    </NavList>
+    <SearchWrapper></SearchWrapper>
   </HeaderWrapper>
 )
 

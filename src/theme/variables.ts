@@ -9,7 +9,7 @@ export const typography = Object.freeze({
   })
   export const color = Object.freeze({
     amber: '#fb6b4a',
-    primary: '#13cb75',
+    primary: '#00af77',
     secondary: '#1cc300',
     text: '#dddddd',
     prompt: '#999999',
