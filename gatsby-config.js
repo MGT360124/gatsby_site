@@ -16,6 +16,16 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components":  "src/components"
+        },
+        extensions: ['tsx', 'ts', 'js', 'css']
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
