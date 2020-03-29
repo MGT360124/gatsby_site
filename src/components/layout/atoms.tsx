@@ -14,6 +14,6 @@ export const Main = styled.main<{pcWidth: string}>`
    max-width: ${props => props.pcWidth};
    margin: 70px auto 0;
    ${Media.lessThan(Media.small)} {
-      max-width: 100vh;
+      max-width: 100wh;
     }
 `

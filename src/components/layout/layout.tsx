@@ -9,6 +9,7 @@ import React from "react"
 import { Header } from "../header"
 import {HeaderWrapper, Main} from './atoms'
 import "@src/style/global.css"
+import GlobalStyle from '@src/theme/global-style'
 
 
 export interface HeaderListItem {
@@ -52,6 +53,7 @@ const pcWidth = '1200px'
 const Layout = ({ children, style}: Props) => {
   return (
     <>
+      <GlobalStyle></GlobalStyle>
       <HeaderWrapper><Header pcWidth={pcWidth} headerList={headerList}/></HeaderWrapper>
       <Main pcWidth={pcWidth} style={style}>{children}</Main>
     </>
