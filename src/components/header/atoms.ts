@@ -1,12 +1,15 @@
 import styled from 'styled-components'
-import { Transition, color} from '@src/theme'
+import { Transition, color, Media} from '@src/theme'
 import { Link } from "gatsby"
 
-export const HeaderWrapper = styled.div<{width: string}>`
+export const HeaderWrapper = styled.div<{pcWidth: string}>`
     display: flex;
-    max-width: ${props => props.width};
+    max-width: ${props => props.pcWidth};
     margin: 0 auto;
     height: 70px;
+    ${Media.lessThan(Media.small)} {
+        max-width: 100%;
+    }
 `
 
 export const NavList = styled.div`
@@ -29,9 +32,16 @@ export const NavListItem = styled(Link)`
         background-color: ${color.primary};
         color: white;
     }
+    ${Media.lessThan(Media.small)} {
+        min-width: 25%;
+        max-width: 25%;
+    }
 `
 
 export const SearchWrapper = styled.div`
   display: flex;
   width: 300px;
+  ${Media.lessThan(Media.small)} {
+    display: none;
+  }
 `

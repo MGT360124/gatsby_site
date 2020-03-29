@@ -1,11 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import {Layout} from "@components/layout"
 import {SEO} from "@components/seo"
 
 const SecondPage = () => (
-  <Layout>
+  <Layout style={{maxWidth: '100%'}}>
     <SEO title="about taoguomao" />
     <h1>about</h1>
   </Layout>

@@ -5,11 +5,11 @@ import {HeaderListItem} from '@components/layout/layout'
 
 interface Props {
   headerList: HeaderListItem[],
-  width: string
+  pcWidth: string
 }
 
-const Header = ({headerList, width}: Props) => (
-  <HeaderWrapper width={width}>
+const Header = ({headerList, pcWidth}: Props) => (
+  <HeaderWrapper pcWidth={pcWidth}>
     <NavList>
       {headerList.map(item => {
           return <NavListItem to={item.link} key={item.name}>{item.name}</NavListItem>

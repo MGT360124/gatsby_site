@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {shadows} from '@theme'
+import {shadows, Media} from '@theme'
 
 export const HeaderWrapper = styled.div`
    width: 100%;
@@ -10,7 +10,10 @@ export const HeaderWrapper = styled.div`
    background: white;
 `
 
-export const Main = styled.main<{width: string}>`
-   max-width: ${props => props.width};
+export const Main = styled.main<{pcWidth: string}>`
+   max-width: ${props => props.pcWidth};
    margin: 70px auto 0;
+   ${Media.lessThan(Media.small)} {
+      max-width: 100vh;
+    }
 `

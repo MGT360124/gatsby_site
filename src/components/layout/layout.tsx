@@ -26,14 +26,14 @@ const headerList: HeaderListItem[] = [
     component: null
   },
   {
-    name: 'html',
-    link: '/html',
+    name: 'react',
+    link: '/react',
     icon: '',
     component: null
   },
   {
-    name: 'css',
-    link: '/css',
+    name: 'vue',
+    link: '/vue',
     icon: '',
     component: null
   },
@@ -45,14 +45,15 @@ const headerList: HeaderListItem[] = [
   },
 ]
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode,
+  style?: React.CSSProperties
 }
 const pcWidth = '1200px'
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, style}: Props) => {
   return (
     <>
-      <HeaderWrapper><Header width={pcWidth} headerList={headerList}/></HeaderWrapper>
-      <Main width={pcWidth}>{children}</Main>
+      <HeaderWrapper><Header pcWidth={pcWidth} headerList={headerList}/></HeaderWrapper>
+      <Main pcWidth={pcWidth} style={style}>{children}</Main>
     </>
   )
 }
