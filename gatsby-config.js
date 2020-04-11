@@ -1,9 +1,9 @@
-require('dotenv').config({
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-const path = require('path')
+const path = require("path")
 
-console.log('process.env', process.env.NODE_ENV)
+console.log("process.env", process.env.NODE_ENV)
 module.exports = {
   pathPrefix: `/site`,
   siteMetadata: {
@@ -22,13 +22,13 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@src': path.resolve(__dirname, 'src'),
-          '@components': path.resolve(__dirname, 'src/components'),
-          '@uitls': path.resolve(__dirname, 'src/utils'),
-          '@theme': path.resolve(__dirname, 'src/theme'),
+          "@src": path.resolve(__dirname, "src"),
+          "@components": path.resolve(__dirname, "src/components"),
+          "@uitls": path.resolve(__dirname, "src/utils"),
+          "@theme": path.resolve(__dirname, "src/theme"),
         },
-        extensions: ['tsx', 'ts', 'js', 'css']
-      }
+        extensions: ["tsx", "ts", "js", "css"],
+      },
     },
     `gatsby-plugin-react-helmet`,
     {

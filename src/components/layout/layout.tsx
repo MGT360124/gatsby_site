@@ -7,10 +7,9 @@
 
 import React from "react"
 import { Header } from "../header"
-import {HeaderWrapper, Main} from './atoms'
+import { HeaderWrapper, Main } from "./atoms"
 import "@src/style/global.css"
-import GlobalStyle from '@src/theme/global-style'
-
+import GlobalStyle from "@src/theme/global-style"
 
 export interface HeaderListItem {
   name: string
@@ -21,41 +20,45 @@ export interface HeaderListItem {
 
 const headerList: HeaderListItem[] = [
   {
-    name: '首页',
-    link: '/',
-    icon: '',
-    component: null
+    name: "首页",
+    link: "/",
+    icon: "",
+    component: null,
   },
   {
-    name: 'react',
-    link: '/react',
-    icon: '',
-    component: null
+    name: "react",
+    link: "/react",
+    icon: "",
+    component: null,
   },
   {
-    name: 'vue',
-    link: '/vue',
-    icon: '',
-    component: null
+    name: "vue",
+    link: "/vue",
+    icon: "",
+    component: null,
   },
   {
-    name: '关于',
-    link: '/about',
-    icon: '',
-    component: null
+    name: "关于",
+    link: "/about",
+    icon: "",
+    component: null,
   },
 ]
 interface Props {
-  children: React.ReactNode,
+  children: React.ReactNode
   style?: React.CSSProperties
 }
-const pcWidth = '1200px'
-const Layout = ({ children, style}: Props) => {
+const pcWidth = "1200px"
+const Layout = ({ children, style }: Props) => {
   return (
     <>
       <GlobalStyle></GlobalStyle>
-      <HeaderWrapper><Header pcWidth={pcWidth} headerList={headerList}/></HeaderWrapper>
-      <Main pcWidth={pcWidth} style={style}>{children}</Main>
+      <HeaderWrapper>
+        <Header pcWidth={pcWidth} headerList={headerList} />
+      </HeaderWrapper>
+      <Main pcWidth={pcWidth} style={style}>
+        {children}
+      </Main>
     </>
   )
 }

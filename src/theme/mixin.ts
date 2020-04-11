@@ -1,6 +1,6 @@
-import { css } from 'styled-components'
-import { spacing } from './variables'
-import Media from './media'
+import { css } from "styled-components"
+import { spacing } from "./variables"
+import Media from "./media"
 
 /**
  * NOTE: hidden element when the screen was smaller than 480px
