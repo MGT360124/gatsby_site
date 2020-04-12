@@ -7,7 +7,7 @@
 
 import React from "react"
 import { Header } from "../header"
-import { HeaderWrapper, Main } from "./atoms"
+import { HeaderWrapper, Main, MainContainer } from "./atoms"
 import "@src/style/global.css"
 import GlobalStyle from "@src/theme/global-style"
 
@@ -56,9 +56,11 @@ const Layout = ({ children, style }: Props) => {
       <HeaderWrapper>
         <Header pcWidth={pcWidth} headerList={headerList} />
       </HeaderWrapper>
-      <Main pcWidth={pcWidth} style={style}>
-        {children}
-      </Main>
+      <MainContainer>
+        <Main pcWidth={pcWidth} style={style}>
+          {children}
+        </Main>
+      </MainContainer>
     </>
   )
 }

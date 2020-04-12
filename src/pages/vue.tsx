@@ -7,7 +7,7 @@ import { SEO } from "@components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="about taoguomao" />
-    <h1>Html</h1>
+    <h1>vue</h1>
   </Layout>
 )
 

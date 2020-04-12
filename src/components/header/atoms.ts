@@ -21,7 +21,7 @@ export const NavList = styled.div`
 
 export const NavListItem = styled(Link)`
   display: flex;
-  min-width: 100px;
+  padding: 0 20px;
   height: 100%;
   line-height: 70px;
   justify-content: center;
