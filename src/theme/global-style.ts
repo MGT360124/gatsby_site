@@ -3,9 +3,9 @@ import Media from "./media"
 
 const GlobalStyle = createGlobalStyle`
   html {
-    font-family: -apple-system, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
-      'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
+    font-family: -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-feature-settings: "tnum";
+    font-variant: tabular-nums;
     text-rendering: optimizeLegibility;
     -ms-overflow-style: scrollbar;
     -webkit-font-smoothing: antialiased;

@@ -11,8 +11,8 @@ export const HeaderWrapper = styled.div`
 `
 
 export const MainContainer = styled.main`
-  wdith: 100%;
-  min-height: 600px;
+  width: 100%;
+  min-height: calc(100vh - 70px);
   background-color: ${color.background};
   ${Media.lessThan(Media.small)} {
     max-height: 100vh;
@@ -24,7 +24,8 @@ export const Main = styled.main<{ pcWidth: string }>`
   margin: 70px auto 0;
   padding-left: 20px;
   padding-top: 10px;
+  min-height: calc(100vh - 70px);
   ${Media.lessThan(Media.small)} {
-    max-width: 100wh;
+    max-width: 100vw;
   }
 `
