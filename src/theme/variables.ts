@@ -15,7 +15,7 @@ export const color = Object.freeze({
   prompt: "#999999",
   divider: "#999999",
   panel: "#333333",
-  background: "rgb(249, 249, 249)",
+  background: "#eceff1",
   input: "#333333",
   highlight: "#3fae49",
 })
