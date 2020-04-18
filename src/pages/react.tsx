@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Card } from "@components/card"
+import { Recent, Recommend } from "@components/panel"
 import { Layout } from "@components/layout"
 import { SEO } from "@components/seo"
 import styled from "styled-components"
@@ -67,7 +68,10 @@ const SecondPage = () => (
           <Card key={item.createDate} item={item}></Card>
         ))}
       </CardContainer>
-      <AboutContainer></AboutContainer>
+      <AboutContainer>
+        <Recent></Recent>
+        <Recommend></Recommend>
+      </AboutContainer>
     </ReactContainer>
   </Layout>
 )
