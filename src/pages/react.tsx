@@ -25,7 +25,10 @@ const ReactList: ReactTypes.CardList[] = [
   {
     createDate: "20200417",
     author: "maoguotao",
-    article: "使用saga处理副作用",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article:
+      "使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用使用saga处理副作用",
     flagList: [
       {
         flag: "react-saga",
@@ -40,6 +43,8 @@ const ReactList: ReactTypes.CardList[] = [
   {
     createDate: "20200416",
     author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
     article: "使用saga处理副作用",
     flagList: [
       {
@@ -59,7 +64,7 @@ const SecondPage = () => (
     <ReactContainer>
       <CardContainer>
         {ReactList.map(item => (
-          <Card key={item.createDate}></Card>
+          <Card key={item.createDate} item={item}></Card>
         ))}
       </CardContainer>
       <AboutContainer></AboutContainer>
