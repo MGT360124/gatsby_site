@@ -27,5 +27,6 @@ export const Main = styled.main<{ pcWidth: string }>`
   min-height: calc(100vh - 70px);
   ${Media.lessThan(Media.small)} {
     max-width: 100vw;
+    padding-right: 20px;
   }
 `

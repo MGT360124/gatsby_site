@@ -6,6 +6,7 @@ import { Layout } from "@components/layout"
 import { SEO } from "@components/seo"
 import styled from "styled-components"
 import { ReactTypes } from "@src/types"
+import { Media } from "@theme"
 
 export const ReactContainer = styled.div`
   display: flex;
@@ -14,12 +15,18 @@ export const ReactContainer = styled.div`
 export const AboutContainer = styled.div`
   width: 400px;
   margin-left: 10px;
+  ${Media.lessThan(Media.small)} {
+    display: none;
+  }
 `
 
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  ${Media.lessThan(Media.small)} {
+    width: 100%;
+  }
 `
 
 const ReactList: ReactTypes.CardList[] = [
@@ -36,7 +43,7 @@ const ReactList: ReactTypes.CardList[] = [
         text: "saga处理effect",
       },
       {
-        flag: "react-saga",
+        flag: "react-thunk",
         text: "saga处理effect",
       },
     ],
@@ -53,7 +60,7 @@ const ReactList: ReactTypes.CardList[] = [
         text: "saga处理effect",
       },
       {
-        flag: "react-saga",
+        flag: "react-thunk",
         text: "saga处理effect",
       },
     ],

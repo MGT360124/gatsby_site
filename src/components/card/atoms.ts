@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { color, typography } from "@src/theme"
+import { color, typography, Media } from "@src/theme"
 
 export const CardContainer = styled.div`
   display: flex;
@@ -13,6 +13,9 @@ export const CardContainer = styled.div`
   background-color: #fff;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  ${Media.lessThan(Media.small)} {
+    width: 100%;
+  }
 `
 
 export const Title = styled.h4`
@@ -33,6 +36,10 @@ export const Article = styled.article`
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  ${Media.lessThan(Media.small)} {
+    -webkit-line-clamp: 3;
+    margin: 10px 0;
+  }
 `
 
 export const Description = styled.div`
@@ -66,4 +73,7 @@ export const Flag = styled.span`
   border: 1px solid ${color.prompt};
   border-radius: 13px;
   font-size: ${typography.textThin};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `
