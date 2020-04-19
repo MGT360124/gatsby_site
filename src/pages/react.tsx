@@ -65,14 +65,150 @@ const ReactList: ReactTypes.CardList[] = [
       },
     ],
   },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
+  {
+    createDate: "20200416",
+    author: "zhangshan",
+    title: "文章标题",
+    flag: "/redux-saga",
+    article: "使用saga处理副作用",
+    flagList: [
+      {
+        flag: "react-saga",
+        text: "saga处理effect",
+      },
+      {
+        flag: "react-thunk",
+        text: "saga处理effect",
+      },
+    ],
+  },
 ]
 const SecondPage = () => (
   <Layout>
     <SEO title="react 相关文章，和实践总结" />
     <ReactContainer>
       <CardContainer>
-        {ReactList.map(item => (
-          <Card key={item.createDate} item={item}></Card>
+        {ReactList.map((item, index) => (
+          <Card key={index} item={item}></Card>
         ))}
       </CardContainer>
       <AboutContainer>

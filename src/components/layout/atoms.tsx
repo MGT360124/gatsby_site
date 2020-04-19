@@ -15,7 +15,7 @@ export const MainContainer = styled.main`
   min-height: calc(100vh - 70px);
   background-color: ${color.background};
   ${Media.lessThan(Media.small)} {
-    max-height: 100vh;
+    min-height: 100vh;
   }
 `
 

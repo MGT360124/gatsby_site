@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { Media } from "@theme"
 export const RecentContainer = styled.div`
   display: flex;
+  position: sticky;
+  top: 80px;
   height: 280px;
   background: white;
   margin-bottom: 10px;
@@ -12,6 +14,8 @@ export const RecentContainer = styled.div`
   }
 `
 export const RecommendContainer = styled.div`
+  position: sticky;
+  top: 370px;
   display: flex;
   height: 280px;
   background: white;
