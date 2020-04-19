@@ -212,7 +212,7 @@ const SecondPage = () => (
         ))}
       </CardContainer>
       <AboutContainer>
-        <Recent></Recent>
+        <Recent ReactList={ReactList}></Recent>
         <Recommend></Recommend>
       </AboutContainer>
     </ReactContainer>
