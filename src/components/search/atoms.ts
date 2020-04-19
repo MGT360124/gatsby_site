@@ -4,7 +4,7 @@ import { color } from "@theme"
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  border: 1px solid ${color.prompt};
+  border: 2px solid ${color.primary};
   height: 40px;
   border-radius: 20px;
 `
