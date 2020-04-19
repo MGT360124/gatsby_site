@@ -6,7 +6,7 @@ import { SEO } from "@components/seo"
 class About extends React.Component {
   render() {
     return (
-      <Layout style={{ maxWidth: "100%" }}>
+      <Layout style={{ maxWidth: "100%", padding: "0" }}>
         <SEO title="about taoguomao" />
         <div>test</div>
       </Layout>

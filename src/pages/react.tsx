@@ -13,7 +13,7 @@ export const ReactContainer = styled.div`
 `
 
 export const AboutContainer = styled.div`
-  width: 400px;
+  width: 280px;
   margin-left: 10px;
   ${Media.lessThan(Media.small)} {
     display: none;
