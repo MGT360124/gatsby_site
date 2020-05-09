@@ -23,6 +23,9 @@ export const Title = styled.h4`
   line-height: 30px;
   margin: 0px;
   font-size: ${typography.h4};
+  :hover {
+    color: ${color.primary};
+  }
 `
 
 export const Article = styled.article`
