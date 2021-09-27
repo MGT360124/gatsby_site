@@ -58,15 +58,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths && sh ./remove.sh",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,tsx,ts,css,json,md}\"",
     "start": "npm run develop --prefix-paths",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
-    "test": "jest",
-    "remove": "sh ./remove.sh",
-    "deploy": "sh ./deploy.sh"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
